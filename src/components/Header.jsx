@@ -1,10 +1,10 @@
 function Header() {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between bg-white">
       <div>
-        <h1 className="text-2xl">Name</h1>
+        <h1 className="text-2xl text-black">Name</h1>
       </div>
-      <div className="flex gap-5 items-center">
+      <div className="flex gap-5 items-center text-gray-600">
         <a href="#">About</a>
         <a href="#">Work</a>
         <a href="#">Testimonials</a>
@@ -81,7 +81,9 @@ function Header() {
             stroke-linejoin="round"
           />
         </svg>
-        <button>Download CV</button>
+        <button className="bg-black rounded-lg text-white text-sm px-3 py-1">
+          Download CV
+        </button>
       </div>
     </div>
   );
