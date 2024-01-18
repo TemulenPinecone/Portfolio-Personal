@@ -16,7 +16,20 @@ export const Experience = () => {
       </div>
 
       {/* 2ND ROW */}
-      <div className="2stRow"></div>
+      <div className="2stRow flex flex-row justify-between text-gray-600 border">
+        <div className="text-[#14A800]">
+          <p>Company Logo</p>
+        </div>
+        <div>
+          <p className="text-black">Position</p>
+          <li>text</li>
+          <li>text</li>
+          <li>text</li>
+        </div>
+        <div>
+          <p>Date</p>
+        </div>
+      </div>
     </div>
   );
 };

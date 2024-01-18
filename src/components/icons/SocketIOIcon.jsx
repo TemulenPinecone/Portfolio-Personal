@@ -1,4 +1,4 @@
-export const SocketIOIcon = ({ width }, { height }) => {
+export const SocketIOIcon = ({ width, height }) => {
   return (
     <svg
       width={width}

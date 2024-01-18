@@ -1,4 +1,4 @@
-export const NextJSIcon = ({ width }, { height }) => {
+export const NextJSIcon = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
