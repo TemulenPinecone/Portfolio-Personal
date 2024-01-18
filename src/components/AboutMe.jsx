@@ -11,8 +11,8 @@ function AboutMe() {
         </div>
 
         <div className="flex flex-row">
-          <div>
-            <div className="picContainer min-w-[350px]">
+          <div className="w-1/2">
+            <div className="picContainer">
               <img
                 className=""
                 src="https://picjumbo.com/wp-content/uploads/beautiful-nature-scenery-free-photo-2210x1473.jpg"
@@ -20,8 +20,8 @@ function AboutMe() {
               />
             </div>
           </div>
-          <div>
-            <p className="text-3xl font-bold">
+          <div className="w-1/2">
+            <p className="text-3xl font-bold text-black">
               Curious about me? Here you have it:
             </p>
             <div className="text-gray-600">

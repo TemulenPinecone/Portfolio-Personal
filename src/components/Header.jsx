@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="flex justify-between bg-white">
+    <div className="container flex justify-between bg-white">
       <div>
         <h1 className="text-2xl text-black">Name</h1>
       </div>
