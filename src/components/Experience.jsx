@@ -1,3 +1,5 @@
+import { experienceData } from "@/datas/experienceData";
+import { ExperienceBorder } from "./ExperienceBorder";
 export const Experience = () => {
   return (
     <div className="container">
@@ -14,22 +16,8 @@ export const Experience = () => {
           </p>
         </div>
       </div>
-
       {/* 2ND ROW */}
-      <div className="2stRow flex flex-row justify-between text-gray-600 border">
-        <div className="text-[#14A800]">
-          <p>Company Logo</p>
-        </div>
-        <div>
-          <p className="text-black">Position</p>
-          <li>text</li>
-          <li>text</li>
-          <li>text</li>
-        </div>
-        <div>
-          <p>Date</p>
-        </div>
-      </div>
+      <ExperienceBorder />
     </div>
   );
 };
