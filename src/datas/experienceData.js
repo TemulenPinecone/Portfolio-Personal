@@ -33,3 +33,55 @@ export const experienceData = [
     experiencePeriod: `Dec 2015 - May 2017`,
   },
 ];
+
+export const wordData = [
+  {
+    image: `https://bnc-content.s3.ap-southeast-1.amazonaws.com/mkt_assets/HomePage_Thumbnail.jpg`,
+    companyName: `BNC`,
+    detail: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.`,
+    techs: [
+      `React`,
+      `Next.js`,
+      `Typescript`,
+      `PostgreSQL`,
+      `Tailwindcss`,
+      `Figma`,
+      `Git`,
+      `Cypress`,
+    ],
+  },
+  {
+    image: `https://www.proprofsproject.com/blog/wp-content/uploads/2022/08/Proprofs-project.jpg`,
+    companyName: `ProProfs`,
+    detail: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.`,
+    techs: [
+      `React`,
+      `Next.js`,
+      `Typescript`,
+      `PostgreSQL`,
+      `Tailwindcss`,
+      `Figma`,
+      `Git`,
+      `Cypress`,
+      `Java`,
+      `Javascript`,
+    ],
+  },
+  {
+    image: `https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-6e43cb6/www.spinxdigital.com/app/uploads/2020/02/web_app_development_banner.png`,
+    companyName: `SPINX`,
+    detail: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.`,
+    techs: [
+      `React`,
+      `Next.js`,
+      `Typescript`,
+      `PostgreSQL`,
+      `Tailwindcss`,
+      `Figma`,
+      `Git`,
+      `Cypress`,
+      `Python`,
+      `C##`,
+    ],
+  },
+];

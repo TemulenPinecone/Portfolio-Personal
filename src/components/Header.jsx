@@ -1,10 +1,12 @@
 function Header() {
   return (
-    <div className="container flex justify-between bg-white">
+    <div className="container flex justify-between bg-white px-10 my-2">
       <div>
-        <h1 className="text-2xl text-black">Name</h1>
+        <h1 className="text-2xl text-black font-extralight">
+          Personal Portfolio
+        </h1>
       </div>
-      <div className="flex gap-5 items-center text-gray-600">
+      <div className="flex gap-5 items-center text-gray-600 font-extralight">
         <a href="#">About</a>
         <a href="#">Work</a>
         <a href="#">Testimonials</a>

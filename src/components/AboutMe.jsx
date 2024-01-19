@@ -1,30 +1,30 @@
 export default AboutMe;
 function AboutMe() {
   return (
-    <div>
-      <div className="container bg-gray-50">
+    <div className="px-10 pt-10 bg-gray-50">
+      <div className="container">
         {/* ABOUT ME */}
-        <div className="flex justify-center">
-          <button className="rounded-lg text-gray-600 text-sm px-3 py-1 bg-gray-200">
+        <div className="flex justify-center pb-10 bg-gray-50">
+          <button className="rounded-lg text-gray-600 text-sm font-light px-3 py-1 bg-gray-200">
             About me
           </button>
         </div>
 
-        <div className="flex flex-row">
-          <div className="w-1/2">
+        <div className="flex flex-row gap-5">
+          <div className="w-[50%]">
             <div className="picContainer">
               <img
                 className=""
-                src="https://picjumbo.com/wp-content/uploads/beautiful-nature-scenery-free-photo-2210x1473.jpg"
+                src="https://cdn.fstoppers.com/styles/full/s3/photos/2019/02/857ebd7658e56c84a4dc65cc4453a305.jpg?itok=rpCL6_UU"
                 alt=""
               />
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="bg-gray-50 w-[50%]">
             <p className="text-3xl font-bold text-black">
               Curious about me? Here you have it:
             </p>
-            <div className="text-gray-600">
+            <div className="text-gray-600 font-extralight">
               <p>
                 I'm a passionate, self-proclaimed designer who specializes in
                 full stack development (React.js & Node.js). I am very
