@@ -6,9 +6,9 @@ import { TwitterIcon } from "./icons/TwitterIcon";
 function Hero() {
   return (
     <div className="container bg-white text-gray-600 flex px-10">
-      <div className="py-[20px] w-[80%] my-auto font-extralight">
+      <div className="py-[100px] w-[80%] my-auto font-extralight">
         {/* CONTENT */}
-        <div className="content ">
+        <div>
           <h1 className="text-4xl text-black font-bold mb-3">
             Hi, I'm Temulen.G 👋
           </h1>
@@ -51,13 +51,13 @@ function Hero() {
 
       <div className="w-[20%] my-auto">
         <div className="flex">
-          <div className="flex content-center">
+          <div className="flex content-center relative z-10">
             <img
               className="border-white border-8"
               src="https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapes-Tryfan-Eryri-National-Park-Tatra-Mountains.jpg"
               alt=""
             />
-            <div className="bg-gray-600 pr-5"></div>
+            <div className="bg-gray-600 absolute -z-10 w-[178px] h-[257px] left-[20px] top-[10px]"></div>
           </div>
           <div className=""></div>
         </div>
