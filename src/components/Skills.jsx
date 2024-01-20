@@ -8,26 +8,18 @@ import {
   NodeJSIcon,
   ExpressIcon,
 } from "./icons";
-// import { JavascriptIcon } from "./icons/Javascript";
-// import { TypescriptIcon } from "./icons/TypescriptIcon";
-// import { ReactIcon } from "./icons/ReactIcon";
-// import { NextJSIcon } from "./icons/NestJSIcon";
-// import { NodeJSIcon } from "./icons/NodeJSIcon";
-// import { ExpressIcon } from "./icons/ExpressIcon";
-// import { NestJSIcon } from "./icons/NestJSIcon";
-// import { SocketIOIcon } from "./icons/SocketIOIcon";
 
 function Skills() {
   return (
     //   CONTAINER
-    <div className="container bg-white">
-      <div className="container">
-        <div className="flex justify-center">
+    <div className="bg-white py-20 flex justify-center w-[100%]">
+      <div className="w-[80%]">
+        <div className="flex justify-center pb-2">
           <p className="border rounded-lg w-fit bg-gray-200 text-gray-600 px-5">
             Skills
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center pb-5">
           <p className=" text-gray-600">
             The skills, tools and technologies I am really good at:
           </p>
@@ -36,7 +28,7 @@ function Skills() {
           {/* ICONS */}
           <div>
             {/* 1st line */}
-            <div className="flex justify-between">
+            <div className="flex justify-between pb-5">
               {/* JAVASCRIPT */}
               <div className="flex flex-col items-center">
                 <JavascriptIcon width={40} height={40} />

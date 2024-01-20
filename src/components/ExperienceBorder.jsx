@@ -2,9 +2,9 @@ import { experienceData } from "@/datas/experienceData";
 
 export const ExperienceBorder = () => {
   return (
-    <div>
+    <div className="">
       {experienceData.map((el) => (
-        <div className="2stRow flex flex-row justify-between text-gray-600 border">
+        <div className="bg-white 2stRow flex flex-row justify-between text-gray-600 rounded-lg mb-10">
           <div className="text-[#14A800]">
             <p className="text-2xl">{el.companyLogo}</p>
           </div>
