@@ -10,7 +10,7 @@ export const Experience = () => {
             Experience
           </p>
         </div>
-        <div className="flex justify-center pb-3">
+        <div className="flex justify-center pb-20">
           <p className="text-gray-600 ">
             Here is a quick summary of my most recent experiences:
           </p>
