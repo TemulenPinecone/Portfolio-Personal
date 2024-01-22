@@ -12,14 +12,14 @@ import {
 function Skills() {
   return (
     //   CONTAINER
-    <div className="bg-white py-20 flex justify-center w-[100%]">
-      <div className="w-[80%]">
-        <div className="flex justify-center pb-2">
+    <div className="container">
+      <div>
+        <div className="flex justify-center">
           <p className="border rounded-lg w-fit bg-gray-200 text-gray-600 px-5">
             Skills
           </p>
         </div>
-        <div className="flex justify-center pb-5">
+        <div className="flex justify-center">
           <p className=" text-gray-600">
             The skills, tools and technologies I am really good at:
           </p>
@@ -28,51 +28,51 @@ function Skills() {
           {/* ICONS */}
           <div>
             {/* 1st line */}
-            <div className="flex justify-between pb-5">
+            <div className="flex justify-between">
               {/* JAVASCRIPT */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col">
                 <JavascriptIcon width={40} height={40} />
                 <p className="text-gray-600">Javascript</p>
               </div>
 
               {/* TYPESCRIPT */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col">
                 <TypescriptIcon width={40} height={40} />
                 <p className="text-gray-600">Typescript</p>
               </div>
 
               {/* REACT */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col">
                 <ReactIcon width={40} height={40} />
                 <p className="text-gray-600">React</p>
               </div>
 
               {/* NEXT.JS */}
-              <div className="flex flex-col items-center">
+              <div>
                 <NextJSIcon height={40} width={40} />
                 <p className="text-gray-600">Next.js</p>
               </div>
 
               {/* NODE.JS */}
-              <div className="flex flex-col items-center">
+              <div>
                 <NodeJSIcon width={40} height={40} />
                 <p className="text-gray-600">Node.js</p>
               </div>
 
               {/* EXPRESS.JS */}
-              <div className="flex flex-col items-center">
+              <div>
                 <ExpressIcon width={40} height={40} />
                 <p className="text-gray-600">Express.js</p>
               </div>
 
               {/* NEST.JS */}
-              <div className="flex flex-col items-center">
+              <div>
                 <NestJSIcon width={40} height={40} />
                 <p className="text-gray-600">Nest.js</p>
               </div>
 
               {/* SOCKET.IO */}
-              <div className="flex flex-col items-center">
+              <div>
                 <SocketIOIcon width={40} height={40} />
                 <p className="text-gray-600">Socket.io</p>
               </div>
@@ -80,49 +80,49 @@ function Skills() {
             {/* 2nd line */}
             <div className="flex justify-between flex-row-reverse">
               {/* JAVASCRIPT */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col">
                 <JavascriptIcon width={40} height={40} />
                 <p className="text-gray-600">Javascript</p>
               </div>
 
               {/* TYPESCRIPT */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col">
                 <TypescriptIcon width={40} height={40} />
                 <p className="text-gray-600">Typescript</p>
               </div>
 
               {/* REACT */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col">
                 <ReactIcon width={40} height={40} />
                 <p className="text-gray-600">React</p>
               </div>
 
               {/* NEXT.JS */}
-              <div className="flex flex-col items-center">
+              <div>
                 <NextJSIcon height={40} width={40} />
                 <p className="text-gray-600">Next.js</p>
               </div>
 
               {/* NODE.JS */}
-              <div className="flex flex-col items-center">
+              <div>
                 <NodeJSIcon width={40} height={40} />
                 <p className="text-gray-600">Node.js</p>
               </div>
 
               {/* EXPRESS.JS */}
-              <div className="flex flex-col items-center">
+              <div>
                 <ExpressIcon width={40} height={40} />
                 <p className="text-gray-600">Express.js</p>
               </div>
 
               {/* NEST.JS */}
-              <div className="flex flex-col items-center">
+              <div>
                 <NestJSIcon width={40} height={40} />
                 <p className="text-gray-600">Nest.js</p>
               </div>
 
               {/* SOCKET.IO */}
-              <div className="flex flex-col items-center">
+              <div>
                 <SocketIOIcon width={40} height={40} />
                 <p className="text-gray-600">Socket.io</p>
               </div>

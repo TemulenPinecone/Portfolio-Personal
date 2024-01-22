@@ -1,9 +1,9 @@
 import { CopyIcon } from "./icons/CopyIcon";
 import { FigmaIcon } from "./icons/FigmaIcon";
 import { GitIcon } from "./icons/GitIcon";
+import { TwitterIcon } from "./icons/TwitterIcon";
 import { MessageIcon } from "./icons/MessageIcon";
 import { PhoneIcon } from "./icons/PhoneIcon";
-import { TwitterIcon } from "./icons/TwitterIcon";
 
 export const ContactMe = () => {
   return (
