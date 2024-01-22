@@ -1,3 +1,5 @@
+import { ExperienceBorder } from "./ExperienceBorder";
+
 export const Experience = () => {
   return (
     <div className="container">
@@ -17,9 +19,9 @@ export const Experience = () => {
 
       {/* 2ND ROW */}
       <div className="2stRow">
-        <div>Company Logo</div>
-        <div>Position</div>
-        <div></div>
+        <div className="flex justify-center">
+          <ExperienceBorder />
+        </div>
       </div>
     </div>
   );
