@@ -2,10 +2,10 @@ import { DarkModeIcon } from "./icons/DarkModeIcon";
 
 function Header() {
   return (
-    <div className="container flex justify-between bg-white px-10 my-2 h-[36px]">
-      <div className=" border-black">
+    <div className="container static flex justify-between bg-white px-10 my-2 h-[50px]">
+      <div className="">
         <img
-          className="w-[100px]"
+          className="w-[300px]"
           src="https://img.freepik.com/premium-vector/elegant-vector-calligraphy-handwriting-name-joseph_427177-583.jpg"
         ></img>
       </div>

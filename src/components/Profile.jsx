@@ -5,10 +5,10 @@ import { LocationIcon } from "./icons/LocationIcon";
 import { TwitterIcon } from "./icons/TwitterIcon";
 function Hero() {
   return (
-    <div className="container bg-white text-gray-600 flex px-10">
+    <div className=" bg-white text-gray-600 flex px-10">
       <div className="py-[100px] w-[80%] my-auto font-extralight">
         {/* CONTENT */}
-        <div>
+        <div className="">
           <h1 className="text-4xl text-black font-bold mb-3">
             Hi, I'm Temulen.G 👋
           </h1>
@@ -57,7 +57,7 @@ function Hero() {
               src="https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapes-Tryfan-Eryri-National-Park-Tatra-Mountains.jpg"
               alt=""
             />
-            <div className="bg-gray-600 absolute -z-10 w-[178px] h-[257px] left-[20px] top-[10px]"></div>
+            <div className="bg-gray-600 absolute -z-10 w-[178px] h-[257px] left-[35px] top-[30px]"></div>
           </div>
           <div className=""></div>
         </div>
