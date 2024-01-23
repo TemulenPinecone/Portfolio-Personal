@@ -12,7 +12,7 @@ import { useTheme } from "@/context/ThemeContext";
 export default function Portfolio() {
   const { theme } = useTheme();
 
-  const divClassName = theme == `light` ? `bg-white` : `bg-black`;
+  const divClassName = theme == `light` ? `bg-white` : `bg-black text-white`;
 
   return (
     <div>
