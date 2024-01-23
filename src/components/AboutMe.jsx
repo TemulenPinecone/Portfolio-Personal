@@ -1,13 +1,42 @@
+import { useTheme } from "@/context/ThemeContext";
+
 export default AboutMe;
+
 function AboutMe() {
+  const { theme, setTheme } = useTheme();
+
+  const changeThemeHandler = () => {
+    setTheme(theme === `light` ? `dark` : `light`);
+  };
+
+  const bgClass = `px-10 py-20 ${
+    theme == `light` ? `bg-gray-50` : `bg-gray-950`
+  }`;
+
+  const txtClass = `font-extralight ${
+    theme == `light` ? `text-gray-600` : `text-gray-100`
+  }`;
+
+  const txtBlack = `text-3xl font-bold pb-[2%] ${
+    theme == `light` ? `text-black` : `text-gray-100`
+  }`;
+
+  const aboutMe = `rounded-lg text-sm font-light px-3 py-1 ${
+    theme == `light` ? `text-gray-600 bg-gray-200` : `text-gray-50 bg-gray-600`
+  }`;
+
+  const borderClassName = `border-l-8 border-b-8 ${
+    theme == `light`
+      ? `border-l-white border-b-white`
+      : `border-l-black border-b-black`
+  }`;
+
   return (
-    <div className="px-10 py-20 bg-gray-50">
-      <div className="container">
+    <div className={bgClass}>
+      <div>
         {/* ABOUT ME */}
-        <div className="flex justify-center pb-10 bg-gray-50">
-          <button className="rounded-lg text-gray-600 text-sm font-light px-3 py-1 bg-gray-200">
-            About me
-          </button>
+        <div className="flex justify-center pb-10 ">
+          <p className={aboutMe}>About me</p>
         </div>
 
         <div className="flex flex-row gap-5">
@@ -15,18 +44,16 @@ function AboutMe() {
             <div className="w-[60%] relative z-20 ">
               <div className="relative border-l-gray-400 border-b-gray-400 border-l-8 border-b-8">
                 <img
-                  className="border-l-white border-b-white border-l-8 border-b-8"
+                  className={borderClassName}
                   src="https://cdn.fstoppers.com/styles/full/s3/photos/2019/02/857ebd7658e56c84a4dc65cc4453a305.jpg?itok=rpCL6_UU"
                   alt=""
                 />
               </div>
             </div>
           </div>
-          <div className="bg-gray-50 w-[50%]">
-            <p className="text-3xl font-bold text-black pb-[2%]">
-              Curious about me? Here you have it:
-            </p>
-            <div className="text-gray-600 font-extralight">
+          <div className=" w-[50%]">
+            <p className={txtBlack}>Curious about me? Here you have it:</p>
+            <div className={txtClass}>
               <p className="pb-[2%]">
                 I'm a passionate, self-proclaimed designer who specializes in
                 full stack development (React.js & Node.js). I am very
