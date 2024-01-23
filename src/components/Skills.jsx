@@ -9,24 +9,24 @@ import {
   ExpressIcon,
 } from "./icons";
 
-function Skills() {
+export function Skills() {
   return (
     //   CONTAINER
-    <div className="container">
+    <div className="py-20">
       <div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-3">
           <p className="border rounded-lg w-fit bg-gray-200 text-gray-600 px-5">
             Skills
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-10">
           <p className=" text-gray-600">
             The skills, tools and technologies I am really good at:
           </p>
         </div>
         <div className="">
           {/* ICONS */}
-          <div>
+          <div className="flex flex-col gap-y-10 justify-between px-5">
             {/* 1st line */}
             <div className="flex justify-between">
               {/* JAVASCRIPT */}
@@ -133,4 +133,3 @@ function Skills() {
     </div>
   );
 }
-export default Skills;

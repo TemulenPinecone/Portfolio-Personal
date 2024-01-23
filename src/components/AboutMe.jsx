@@ -12,14 +12,15 @@ function AboutMe() {
 
         <div className="flex flex-row gap-5">
           <div className="w-[50%] flex justify-center">
-            <div className="w-[60%] relative z-20">
-              <img
-                className="border-white border-8"
-                src="https://cdn.fstoppers.com/styles/full/s3/photos/2019/02/857ebd7658e56c84a4dc65cc4453a305.jpg?itok=rpCL6_UU"
-                alt=""
-              />
+            <div className="w-[60%] relative z-20 ">
+              <div className="relative border-l-gray-400 border-b-gray-400 border-l-8 border-b-8">
+                <img
+                  className="border-l-white border-b-white border-l-8 border-b-8"
+                  src="https://cdn.fstoppers.com/styles/full/s3/photos/2019/02/857ebd7658e56c84a4dc65cc4453a305.jpg?itok=rpCL6_UU"
+                  alt=""
+                />
+              </div>
             </div>
-            <div className="bg-gray-600 absolute z-10 w-[300px] h-[440px] left-[120px] top-[570px]"></div>
           </div>
           <div className="bg-gray-50 w-[50%]">
             <p className="text-3xl font-bold text-black pb-[2%]">
