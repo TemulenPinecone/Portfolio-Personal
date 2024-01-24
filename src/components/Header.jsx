@@ -19,7 +19,7 @@ function Header() {
   }`;
 
   return (
-    <div className=" static flex justify-between px-10 h-[50px]">
+    <div className="static flex justify-between px-10 h-[50px]">
       <div>
         {/* {theme == "light" ? (
           <img

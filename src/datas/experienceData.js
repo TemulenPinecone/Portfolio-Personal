@@ -1,3 +1,14 @@
+import {
+  JavascriptIcon,
+  NestJSIcon,
+  NextJSIcon,
+  ReactIcon,
+  SocketIOIcon,
+  TypescriptIcon,
+  NodeJSIcon,
+  ExpressIcon,
+} from "@/components/icons/skillsIcon";
+
 export const experienceData = [
   {
     companyLogo: `UpWork`,
@@ -35,7 +46,7 @@ export const experienceData = [
   },
 ];
 
-export const wordData = [
+export const workData = [
   {
     image: `https://bnc-content.s3.ap-southeast-1.amazonaws.com/mkt_assets/HomePage_Thumbnail.jpg`,
     companyName: `BNC`,
@@ -104,4 +115,26 @@ export const wordData = [
       `C++`,
     ],
   },
+];
+
+export const skillsIconsCol1 = [
+  { iconSVG: <JavascriptIcon />, iconName: `Javascript` },
+  { iconSVG: <TypescriptIcon />, iconName: `Typescript` },
+  { iconSVG: <ReactIcon />, iconName: `React` },
+  { iconSVG: <NextJSIcon />, iconName: `Nest.js` },
+  { iconSVG: <NodeJSIcon />, iconName: `Node.js` },
+  { iconSVG: <ExpressIcon />, iconName: `Express.js` },
+  { iconSVG: <NestJSIcon />, iconName: `Nest.js` },
+  { iconSVG: <SocketIOIcon />, iconName: `Socket.io` },
+];
+
+export const skillsIconsCol2 = [
+  { iconSVG: <JavascriptIcon />, iconName: `Javascript` },
+  { iconSVG: <TypescriptIcon />, iconName: `Typescript` },
+  { iconSVG: <ReactIcon />, iconName: `React` },
+  { iconSVG: <NextJSIcon />, iconName: `Nest.js` },
+  { iconSVG: <NodeJSIcon />, iconName: `Node.js` },
+  { iconSVG: <ExpressIcon />, iconName: `Express.js` },
+  { iconSVG: <NestJSIcon />, iconName: `Nest.js` },
+  { iconSVG: <SocketIOIcon />, iconName: `Socket.io` },
 ];

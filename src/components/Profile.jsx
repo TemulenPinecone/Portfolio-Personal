@@ -8,13 +8,10 @@ import { useTheme } from "@/context/ThemeContext";
 function Profile() {
   const { theme, setTheme } = useTheme();
 
-  const changeThemeHandler = () => {
-    setTheme(theme === `light` ? `dark` : `light`);
-  };
-
   const divClassName = `flex gap-5 items-center font-extralight ${
     theme == `light` ? `bg-white text-gray-900` : `bg-black text-gray-100`
   }`;
+
   const borderClassName = `border-r-8 border-b-8 ${
     theme == `light`
       ? `border-b-white border-r-white`

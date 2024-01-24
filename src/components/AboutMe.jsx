@@ -5,12 +5,8 @@ export default AboutMe;
 function AboutMe() {
   const { theme, setTheme } = useTheme();
 
-  const changeThemeHandler = () => {
-    setTheme(theme === `light` ? `dark` : `light`);
-  };
-
   const bgClass = `px-10 py-20 ${
-    theme == `light` ? `bg-gray-50` : `bg-gray-950`
+    theme == `light` ? `bg-gray-50` : `bg-[#111827]`
   }`;
 
   const txtClass = `font-extralight ${

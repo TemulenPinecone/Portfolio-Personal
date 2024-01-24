@@ -12,16 +12,16 @@ import { useTheme } from "@/context/ThemeContext";
 export default function Portfolio() {
   const { theme } = useTheme();
 
-  const divClassName = theme == `light` ? `bg-white` : `bg-black text-white`;
+  const divClassName = theme == `light` ? `bg-gray-50` : `bg-black text-white`;
 
   return (
     <div>
       <div className={divClassName}>
         <Header />
         {/* <Profile />
-        <AboutMe /> */}
-        <Skills />
-        <Experience />
+        <AboutMe />
+        <Skills /> */}
+        {/* <Experience /> */}
         <Work />
         <ContactMe />
         <Footer />
