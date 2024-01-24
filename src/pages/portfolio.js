@@ -18,10 +18,10 @@ export default function Portfolio() {
     <div>
       <div className={divClassName}>
         <Header />
-        {/* <Profile />
+        <Profile />
         <AboutMe />
-        <Skills /> */}
-        {/* <Experience /> */}
+        <Skills />
+        <Experience />
         <Work />
         <ContactMe />
         <Footer />

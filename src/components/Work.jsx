@@ -11,61 +11,74 @@ export const Work = () => {
       : `bg-[#374151] text-[#D1D5DB]`
   }`;
 
-  const bgClass = ` ${theme == `light` ? `bg-gray-50` : `bg-[#111827]`}`;
+  const boldTextDarkLight = `text-xl font-semibold mb-3 ${
+    theme == `light` ? `text-black` : `text-[#F9FAFB]`
+  }`;
 
-  const workBorderBg = ` ${theme == `light` ? `bg-white` : `bg-[#1F2937]`}`;
+  const tagSkillClass = ` border-transparent rounded-lg w-fit px-2 py-[3px] text-sm font-extralight ${
+    theme == `light`
+      ? `bg-gray-200 text-gray-600`
+      : `bg-[#374151] text-[#D1D5DB]`
+  }`;
+
+  const workLeftBorderBg = ` ${
+    theme == `light` ? `bg-[#F9FAFB]` : `bg-[#374151]`
+  }`;
+  const workRightBorderBg = `font-extralight ${
+    theme == `light`
+      ? `bg-[#F9FAFB] text-[#4B5563]`
+      : `bg-[#1F2937] text-[#D1D5DB] font-extralight`
+  }`;
 
   const textDarkLight = ` ${
     theme == `light` ? `text-gray-600` : `text-[#D1D5DB]`
   }`;
 
-  return (
-    <div>
-      <div className="py-[96px] px-[80px]">
-        <div className="text-gray-600 pb-5">
-          <div className="flex justify-center pb-1">
-            <p className={tagClass}>Work</p>
-          </div>
-          <div
-            className={`${textDarkLight} flex justify-center font-extralight`}
-          >
-            <p>Some of the noteworthy projects I have built:</p>
-          </div>
-        </div>
+  const bgColor = `${theme == `light` ? `bg-white` : `bg-black`}`;
 
-        {workData.map((el) => {
-          return (
-            <div className="flex shadow-2xl rounded-lg mb-10">
-              <div className=" w-[50%] bg-gray-200 flex justify-center items-center rounded-l-lg">
-                <img className="h-[90%] rounded-lg" src={el.image} alt="" />
+  return (
+    <div className={`${bgColor} py-[96px] px-[80px]`}>
+      <div className="text-gray-600 pb-5">
+        <div className="flex justify-center pb-1">
+          <p className={tagClass}>Work</p>
+        </div>
+        <div className={`${textDarkLight} flex justify-center font-extralight`}>
+          <p>Some of the noteworthy projects I have built:</p>
+        </div>
+      </div>
+
+      {workData.map((el) => {
+        return (
+          <div className="flex shadow-2xl rounded-lg mb-10">
+            <div
+              className={`${workLeftBorderBg} bg-cover w-[50%] flex justify-center items-center rounded-l-lg p-[48px]`}
+            >
+              <img className="rounded-lg" src={el.image} alt="" />
+            </div>
+            <div
+              className={`${workRightBorderBg} w-[50%] rounded-r-lg p-[48px]`}
+            >
+              <p className={boldTextDarkLight}>{el.companyName}</p>
+              <p className="text-sm pb-[24px]">{el.detail}</p>
+              <div className="flex flex-wrap gap-2 pt-2 pb-[24px]">
+                {el.techs.map((techsEach, index) => {
+                  return (
+                    <div>
+                      <p className={tagSkillClass}>{techsEach}</p>
+                    </div>
+                  );
+                })}
               </div>
-              <div className="w-[50%] text-gray-600 pl-3 rounded-r-lg">
-                <p className="text-2xl font-medium pb-1 text-black">
-                  {el.companyName}
-                </p>
-                <p className="text-sm">{el.detail}</p>
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {el.techs.map((techsEach, index) => {
-                    return (
-                      <div>
-                        <p className="border rounded-lg w-fit bg-gray-200 px-1 text-sm">
-                          {techsEach}
-                        </p>
-                      </div>
-                    );
-                  })}
+              <div className="my-2">
+                <div>
+                  <WorkIcon />
                 </div>
-                <div className="my-2">
-                  <div>
-                    <WorkIcon />
-                  </div>
-                  <div></div>
-                </div>
+                <div></div>
               </div>
             </div>
-          );
-        })}
-      </div>
+          </div>
+        );
+      })}
     </div>
   );
 };

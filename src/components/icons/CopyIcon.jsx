@@ -1,3 +1,6 @@
+import { useTheme } from "@/context/ThemeContext";
+
+
 export const CopyIcon = ({ width, height }) => {
   return (
     <svg

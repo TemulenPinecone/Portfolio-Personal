@@ -22,13 +22,15 @@ export function Skills() {
       : `bg-[#374151] text-[#D1D5DB]`
   }`;
 
+  const bgColor = `${theme == `light` ? `bg-white` : `bg-black`}`;
+
   const divClassName = ` ${
     theme == `light` ? `text-gray-600` : `text-[#D1D5DB]`
   }`;
 
   return (
     //   CONTAINER
-    <div className="py-20">
+    <div className={`${bgColor} py-20`}>
       <div className="flex justify-center mb-3">
         <p className={tagClass}>Skills</p>
       </div>
@@ -47,7 +49,9 @@ export function Skills() {
                 {element.iconSVG}
               </div>
               <div className="flex justify-center">
-                <p className="text-white">{element.iconName}</p>
+                <p className={`${divClassName} font-extralight`}>
+                  {element.iconName}
+                </p>
               </div>
             </div>
           ))}

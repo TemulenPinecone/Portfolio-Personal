@@ -6,11 +6,9 @@ import { TwitterIcon } from "./icons/TwitterIcon";
 import { useTheme } from "@/context/ThemeContext";
 
 function Profile() {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
-  const divClassName = `flex gap-5 items-center font-extralight ${
-    theme == `light` ? `bg-white text-gray-900` : `bg-black text-gray-100`
-  }`;
+  const bgColor = `${theme == `light` ? `bg-white` : `bg-black`}`;
 
   const borderClassName = `border-r-8 border-b-8 ${
     theme == `light`
@@ -19,10 +17,10 @@ function Profile() {
   }`;
 
   return (
-    <div className="flex px-10 *:if (theme==`light`) {text-gray-600 bg-white} else {text-gray-100 bg-black}">
+    <div className={`${bgColor} flex px-10`}>
       <div className="py-[100px] w-[80%] my-auto font-extralight">
         {/* CONTENT */}
-        <div className="">
+        <div>
           <h1
             className="text-4xl font-bold mb-3 *:if (theme==`light`) {text-gray-900
           } else {text-gray-100}"
@@ -54,13 +52,25 @@ function Profile() {
         <div className="mt-3">
           <div className="flex items-center">
             <div>
-              <GitIcon width={30} height={30} />
+              {theme == `light` ? (
+                <GitIcon stroke={`#4B5563`} width={30} height={30} />
+              ) : (
+                <GitIcon stroke={`#FFFFFF`} width={30} height={30} />
+              )}
             </div>
             <div>
-              <TwitterIcon width={20} height={20} />
+              {theme == `light` ? (
+                <TwitterIcon stroke={`#4B5563`} width={23} height={23} />
+              ) : (
+                <TwitterIcon stroke={`#FFFFFF`} width={23} height={23} />
+              )}
             </div>
             <div className="pl-1">
-              <FigmaIcon width={20} height={20} />
+              {theme == `light` ? (
+                <FigmaIcon stroke={`#4B5563`} width={20} height={28} />
+              ) : (
+                <FigmaIcon stroke={`#FFFFFF`} width={20} height={28} />
+              )}
             </div>
           </div>
         </div>

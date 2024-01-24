@@ -14,12 +14,14 @@ function Header() {
     theme == `light` ? `bg-white text-gray-900` : `bg-black text-gray-100`
   }`;
 
+  const bgColor = ` ${theme == `light` ? `bg-white` : `bg-black`}`;
+
   const downloadButton = `rounded-lg text-sm px-5 py-1 ${
     theme == `light` ? `bg-black text-gray-100` : `bg-gray-50 text-gray-900`
   }`;
 
   return (
-    <div className="static flex justify-between px-10 h-[50px]">
+    <div className={`${bgColor} static flex justify-between px-10 h-[50px]`}>
       <div>
         {/* {theme == "light" ? (
           <img
