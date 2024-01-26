@@ -10,15 +10,22 @@ function Profile() {
 
   const bgColor = `${theme == `light` ? `bg-white` : `bg-black`}`;
 
-  const borderClassName = `border-r-8 border-b-8 ${
+  const borderClassName = `border-r-8 border-b-8 border-l-0${
     theme == `light`
-      ? `border-b-white border-r-white`
-      : `border-b-black border-r-black`
+      ? `border-b-white border-r-white border-l-0`
+      : `border-b-black border-r-black border-l-0`
+  }`;
+  const borderClassNamePhone = `border-r-8 border-b-8 border-l-8 ${
+    theme == `light`
+      ? `border-b-white border-r-white border-l-white`
+      : `border-b-black border-r-black border-l-black`
   }`;
 
   return (
-    <div className={`${bgColor} flex px-10`}>
-      <div className="py-[100px] w-[80%] my-auto font-extralight">
+    <div
+      className={`${bgColor} flex flex-col-reverse px-10 sm:flex sm:flex-row sm:px-10`}
+    >
+      <div className="pb-[100px] sm:py-[100px] w-[80%] my-auto font-extralight">
         {/* CONTENT */}
         <div>
           <h1
@@ -75,16 +82,13 @@ function Profile() {
           </div>
         </div>
       </div>
-
-      <div className="w-[20%] my-auto">
-        <div className="flex">
-          <div className="flex content-center relative z-10 border-r-gray-400 border-b-gray-400 border-r-8 border-b-8">
-            <div className={borderClassName}>
-              <img
-                src="https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapes-Tryfan-Eryri-National-Park-Tatra-Mountains.jpg"
-                alt=""
-              />
-            </div>
+      <div className="ml-10 my-20 w-[90%] sm:w-[20%]">
+        <div className="border-r-8 border-b-8 border-l-8 border-r-gray-400 border-b-gray-400 border-l-gray-400 sm:border-r-gray-400 sm:border-b-gray-400 sm:border-r-8 sm:border-b-8 sm:border-l-0">
+          <div className="">
+            <img
+              src="https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapes-Tryfan-Eryri-National-Park-Tatra-Mountains.jpg"
+              alt=""
+            />
           </div>
         </div>
       </div>

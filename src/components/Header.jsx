@@ -2,6 +2,9 @@ import react from "react";
 import { useTheme } from "@/context/ThemeContext";
 import { DarkModeIcon } from "./icons/DarkModeIcon";
 import { LightModeIcon } from "./icons/LightModeIcon";
+import { HamburgerIcon } from "./icons/HamburgerIcon";
+import { SignatureIcon } from "./icons/SignatureIcon";
+import { SignatureIconWhite } from "./icons/SignatureIconWhite";
 
 function Header() {
   const { theme, setTheme } = useTheme();
@@ -10,7 +13,7 @@ function Header() {
     setTheme(theme === `light` ? `dark` : `light`);
   };
 
-  const divClassName = `flex gap-5 items-center font-extralight ${
+  const divClassName = ` ${
     theme == `light` ? `bg-white text-gray-900` : `bg-black text-gray-100`
   }`;
 
@@ -21,16 +24,13 @@ function Header() {
   }`;
 
   return (
-    <div className={`${bgColor} static flex justify-between px-10 h-[50px]`}>
-      <div>
-        {/* {theme == "light" ? (
-          <img
-            className="w-[300px] h-[100px] object-cover"
-            // src="https://img.freepik.com/premium-vector/elegant-vector-calligraphy-handwriting-name-joseph_427177-583.jpg"
-          ></img>
-        ) : null} */}
+    <div className={`${bgColor} sm:static flex justify-between px-10 h-[70px]`}>
+      <div className="w-[300px] h-[70px]">
+        {theme == "light" ? <SignatureIcon /> : <SignatureIconWhite />}
       </div>
-      <div className={divClassName}>
+      <div
+        className={`${divClassName} hidden sm:flex sm:gap-5 sm:items-center sm:font-extralight`}
+      >
         <a className={divClassName} href="#">
           About
         </a>
@@ -46,6 +46,9 @@ function Header() {
           )}
         </button>
         <button className={downloadButton}>Download CV</button>
+      </div>
+      <div className="flex items-center pr-5 pt-10 sm:hidden">
+        <HamburgerIcon width={30} />
       </div>
     </div>
   );

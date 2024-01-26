@@ -42,30 +42,14 @@ export function Skills() {
       {/* ICONS */}
       <div className="flex flex-col gap-y-10 justify-between px-5">
         {/* 1st line - MAP */}
-        <div className="flex justify-between px-10">
+        <div className="grid grid-cols-3 gap-y-5 sm:grid-cols-8">
           {skillsIconsCol1.map((element) => (
-            <div className="flex flex-col items-center">
-              <div className="flex w-16 h-16 justify-center">
-                {element.iconSVG}
-              </div>
-              <div className="flex justify-center">
-                <p className={`${divClassName} font-extralight`}>
+            <div className="w-[40%] place-self-center">
+              <div>{element.iconSVG}</div>
+              <div>
+                <p className={`${divClassName} font-extralight text-center`}>
                   {element.iconName}
                 </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* 2nd line - MAP */}
-        <div className="flex justify-between px-10">
-          {skillsIconsCol2.map((element) => (
-            <div className="flex flex-col items-center">
-              <div className="flex w-16 h-16 justify-center">
-                {element.iconSVG}
-              </div>
-              <div className="flex justify-center">
-                <p className="text-white">{element.iconName}</p>
               </div>
             </div>
           ))}

@@ -124,17 +124,14 @@ export const skillsIconsCol1 = [
   { iconSVG: <NextJSIcon />, iconName: `Next.js` },
   { iconSVG: <NodeJSIcon />, iconName: `Node.js` },
   { iconSVG: <ExpressIcon />, iconName: `Express.js` },
-  { iconSVG: <NestJSIcon />, iconName: `Nest.js` },
   { iconSVG: <SocketIOIcon />, iconName: `Socket.io` },
-];
-
-export const skillsIconsCol2 = [
-  { iconSVG: <JavascriptIcon />, iconName: `Javascript` },
-  { iconSVG: <TypescriptIcon />, iconName: `Typescript` },
-  { iconSVG: <ReactIcon />, iconName: `React` },
+  { iconSVG: <NestJSIcon />, iconName: `Nest.js` },
   { iconSVG: <NextJSIcon />, iconName: `Next.js` },
-  { iconSVG: <NodeJSIcon />, iconName: `Node.js` },
+  { iconSVG: <JavascriptIcon />, iconName: `Javascript` },
   { iconSVG: <ExpressIcon />, iconName: `Express.js` },
+  { iconSVG: <ReactIcon />, iconName: `React` },
+  { iconSVG: <TypescriptIcon />, iconName: `Typescript` },
+  { iconSVG: <NodeJSIcon />, iconName: `Node.js` },
   { iconSVG: <NestJSIcon />, iconName: `Nest.js` },
   { iconSVG: <SocketIOIcon />, iconName: `Socket.io` },
 ];
